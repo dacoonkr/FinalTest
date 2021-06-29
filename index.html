@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<title>과목별 기말고사 목표 점수 계산기</title>
+<h1>과목별 기말고사 목표 점수 계산기</h1>
+
+<style>
+    div, table, td {
+        border: 1px black;
+    }
+</style>
+
+<body>
+<div>
+    <h2>국어</h2>
+    중간고사 <input type="text" id="korean_1"> 30%
+    <br>
+    시 쓰기 <input type="text" id="korean_2"> 20%
+    <br>
+    내 경험 글쓰기 <input type="text" id="korean_3"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('korean_1').value
+        let t1 = document.getElementById('korean_2').value
+        let t2 = document.getElementById('korean_3').value
+        document.getElementById('korean_a').innerText = (900 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('korean_b').innerText = (800 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('korean_c').innerText = (700 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('korean_d').innerText = (600 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('korean_e').innerText = (500 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('korean_f').innerText = (400 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='korean_a'></td></tr>
+            <tr><td>B</td><td id='korean_b'></td></tr>
+            <tr><td>C</td><td id='korean_c'></td></tr>
+            <tr><td>D</td><td id='korean_d'></td></tr>
+            <tr><td>E</td><td id='korean_e'></td></tr>
+            <tr><td>F</td><td id='korean_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2>수학</h2>
+    중간고사 <input type="text" id="math_1"> 30%
+    <br>
+    코넬노트 <input type="text" id="math_2"> 20%
+    <br>
+    마인드맵 <input type="text" id="math_3"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('math_1').value
+        let t1 = document.getElementById('math_2').value
+        let t2 = document.getElementById('math_3').value
+        document.getElementById('math_a').innerText = (900 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('math_b').innerText = (800 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('math_c').innerText = (700 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('math_d').innerText = (600 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('math_e').innerText = (500 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('math_f').innerText = (400 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='math_a'></td></tr>
+            <tr><td>B</td><td id='math_b'></td></tr>
+            <tr><td>C</td><td id='math_c'></td></tr>
+            <tr><td>D</td><td id='math_d'></td></tr>
+            <tr><td>E</td><td id='math_e'></td></tr>
+            <tr><td>F</td><td id='math_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2>과학</h2>
+    중간고사 <input type="text" id="science_1"> 30%
+    <br>
+    전동기 <input type="text" id="science_2"> 20%
+    <br>
+    태양계 인포그래픽 <input type="text" id="science_3"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('science_1').value
+        let t1 = document.getElementById('science_2').value
+        let t2 = document.getElementById('science_3').value
+        document.getElementById('science_a').innerText = (900 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('science_b').innerText = (800 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('science_c').innerText = (700 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('science_d').innerText = (600 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('science_e').innerText = (500 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('science_f').innerText = (400 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='science_a'></td></tr>
+            <tr><td>B</td><td id='science_b'></td></tr>
+            <tr><td>C</td><td id='science_c'></td></tr>
+            <tr><td>D</td><td id='science_d'></td></tr>
+            <tr><td>E</td><td id='science_e'></td></tr>
+            <tr><td>F</td><td id='science_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+<div>
+    <h2>영어</h2>
+    중간고사 <input type="text" id="english_1"> 20%
+    <br>
+    전국영어 듣기평가 <input type="text" id="english_2"> 10%
+    <br>
+    러닝 로그 (학습지) <input type="text" id="english_3"> 20%
+    <br>
+    말하기 <input type="text" id="english_4"> 10%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('english_1').value
+        let t1 = document.getElementById('english_2').value
+        let t2 = document.getElementById('english_3').value
+        let t3 = document.getElementById('english_4').value
+        document.getElementById('english_a').innerText = (900 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+        document.getElementById('english_b').innerText = (800 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+        document.getElementById('english_c').innerText = (700 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+        document.getElementById('english_d').innerText = (600 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+        document.getElementById('english_e').innerText = (500 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+        document.getElementById('english_f').innerText = (400 - (t0 * 2 + t1 * 1 + t2 * 2 + t3 * 1)) / 4
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='english_a'></td></tr>
+            <tr><td>B</td><td id='english_b'></td></tr>
+            <tr><td>C</td><td id='english_c'></td></tr>
+            <tr><td>D</td><td id='english_d'></td></tr>
+            <tr><td>E</td><td id='english_e'></td></tr>
+            <tr><td>F</td><td id='english_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+<div>
+    <h2>역사</h2>
+    중간고사 <input type="text" id="history_1"> 30%
+    <br>
+    코넬노트 <input type="text" id="history_2"> 20%
+    <br>
+    박물관 팸플릿 <input type="text" id="history_3"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('history_1').value
+        let t1 = document.getElementById('history_2').value
+        let t2 = document.getElementById('history_3').value
+        document.getElementById('history_a').innerText = (900 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('history_b').innerText = (800 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('history_c').innerText = (700 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('history_d').innerText = (600 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('history_e').innerText = (500 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+        document.getElementById('history_f').innerText = (400 - (t0 * 3 + t1 * 2 + t2 * 2)) / 3
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='history_a'></td></tr>
+            <tr><td>B</td><td id='history_b'></td></tr>
+            <tr><td>C</td><td id='history_c'></td></tr>
+            <tr><td>D</td><td id='history_d'></td></tr>
+            <tr><td>E</td><td id='history_e'></td></tr>
+            <tr><td>F</td><td id='history_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+<div>
+    <h2>기술 가정</h2>
+    바느질 <input type="text" id="skill_1"> 20%
+    <br>
+    오토마타 만들기 <input type="text" id="skill_2"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('skill_1').value
+        let t1 = document.getElementById('skill_2').value
+        document.getElementById('skill_a').innerText = (900 - (t0 * 2 + t1 * 2)) / 6
+        document.getElementById('skill_b').innerText = (800 - (t0 * 2 + t1 * 2)) / 6
+        document.getElementById('skill_c').innerText = (700 - (t0 * 2 + t1 * 2)) / 6
+        document.getElementById('skill_d').innerText = (600 - (t0 * 2 + t1 * 2)) / 6
+        document.getElementById('skill_e').innerText = (500 - (t0 * 2 + t1 * 2)) / 6
+        document.getElementById('skill_f').innerText = (400 - (t0 * 2 + t1 * 2)) / 6
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='skill_a'></td></tr>
+            <tr><td>B</td><td id='skill_b'></td></tr>
+            <tr><td>C</td><td id='skill_c'></td></tr>
+            <tr><td>D</td><td id='skill_d'></td></tr>
+            <tr><td>E</td><td id='skill_e'></td></tr>
+            <tr><td>F</td><td id='skill_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+<div>
+    <h2>도덕</h2>
+    중간고사 <input type="text" id="doduk_1"> 20%
+    <br>
+    탐구주제 글쓰기 <input type="text" id="doduk_2"> 20%
+    <br>
+    성찰록 <input type="text" id="doduk_3"> 20%
+    <br>
+
+    <button onclick="
+        let t0 = document.getElementById('doduk_1').value
+        let t1 = document.getElementById('doduk_2').value
+        let t2 = document.getElementById('doduk_3').value
+        document.getElementById('doduk_a').innerText = (900 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+        document.getElementById('doduk_b').innerText = (800 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+        document.getElementById('doduk_c').innerText = (700 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+        document.getElementById('doduk_d').innerText = (600 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+        document.getElementById('doduk_e').innerText = (500 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+        document.getElementById('doduk_f').innerText = (400 - (t0 * 2 + t1 * 2 + t2 * 2)) / 4
+    ">계산하기</button>
+
+    <table>
+        <thead>
+            <td>등급</td>
+            <td>목표점수</td>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td id='doduk_a'></td></tr>
+            <tr><td>B</td><td id='doduk_b'></td></tr>
+            <tr><td>C</td><td id='doduk_c'></td></tr>
+            <tr><td>D</td><td id='doduk_d'></td></tr>
+            <tr><td>E</td><td id='doduk_e'></td></tr>
+            <tr><td>F</td><td id='doduk_f'></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
